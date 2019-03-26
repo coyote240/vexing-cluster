@@ -1,0 +1,15 @@
+kind: Function
+apiVersion: kubeless.io/v1beta1
+metadata:
+  name: hello-python
+  namespace: default
+  label:
+    created-by: kubeless
+    function: hello-python
+spec:
+  runtime: python3.3
+  timeout: "180"
+  handler: hello.hello
+  deps: ""
+  function-content-type: url
+  function: ''
